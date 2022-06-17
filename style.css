@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url("./Manrope-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: rgb(130, 87, 229);
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--backgrond);
+    color: var(--text-color);
+    font-family: 'Manrope', sans-serif;
+    background-image: url("./assets/blur-1.png"), url("./assets/blur-2.png");
+    background-repeat: no-repeat,no-repeat;
+    background-position: 0% 369px, 100% -200px;
+    overflow: hidden;
+    height: 100vh;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    
+    align-items: center;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 20px;
+    
+    
+}
+
+li:hover{
+    border-bottom: 2px solid var(--button);
+}
+
+nav ul{
+    display: flex;
+    padding-left: 0px;
+    margin-left: 80px;
+    margin-right: 0px;   
+}
+
+#btn_Coffee{
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--button);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#btn_Coffee:hover{
+    background: var(--button);
+    border: 1px solid black;
+    color: black;
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#h1_coffee {
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+#h1_code{
+    color: black;
+    margin: 0px;
+    display: block;
+    
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 109px;
+    letter-spacing: -0.03em;
+
+    
+
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+#arrow_left{
+    transform: rotate(180deg);
+
+}
+
+#rocketcoffee{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 200px;
+
+
+
+}
+
